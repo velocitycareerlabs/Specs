@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint VCL.podspec' to ensure this is a
+# Be sure to run `pod lib lint VCLAuth.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -17,7 +17,7 @@ DESC
   s.homepage         = 'https://github.com/velocitycareerlabs'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'michaelavoyan' => 'michael.avoyan@velocitycareerlabs.com' }
-  s.source           = { :git => 'https://github.com/velocitycareerlabs/VCLBiometric-Swift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/velocitycareerlabs/VCLAuth-Swift.git', :tag => s.version.to_s }
   
   s.platform                = :ios
   s.ios.deployment_target   = '11.0'
@@ -26,8 +26,8 @@ DESC
 
   s.frameworks          = 'LocalAuthentication'
   s.vendored_frameworks = 'Frameworks/VCLAuth.xcframework'
-  # s.source_files = "VCL/**/*"
+  # s.source_files = "VCLAuth/**/*"
   
-  # s.documentation_url = 'https://github.com/velocitycareerlabs/poc-docs/blob/dev/VCL-Swift.md'
+  # s.documentation_url = 'https://github.com/velocitycareerlabs/poc-docs/blob/dev/VCLAuth-Swift.md'
   s.xcconfig =  { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'}
 end
