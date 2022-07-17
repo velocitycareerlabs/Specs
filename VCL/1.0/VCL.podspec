@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'VCLBiometric'
-  s.version          = '0.1.0'
-  s.summary          = 'VCLBiometric framework for iOS'
+  s.name             = 'VCL'
+  s.version          = '1.0'
+  s.summary          = 'VCL framework for iOS'
   s.description   = <<-DESC
   The Velocity Network Foundation is a nonprofit organization established by Velocity Career Labs, a developer of innovative blockchain technology.
 DESC
@@ -17,15 +17,14 @@ DESC
   s.homepage         = 'https://github.com/velocitycareerlabs'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'michaelavoyan' => 'michael.avoyan@velocitycareerlabs.com' }
-  s.source           = { :git => 'https://github.com/velocitycareerlabs/VCLBiometric-Swift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/velocitycareerlabs/VCL-Swift.git', :tag => s.version.to_s }
   
   s.platform                = :ios
   s.ios.deployment_target   = '11.0'
   s.requires_arc            = true
   s.swift_version           = '5'
 
-  s.frameworks          = 'LocalAuthentication'
-  s.vendored_frameworks = 'Frameworks/VCLBiometric.xcframework'
+  s.vendored_frameworks = 'Frameworks/VCL.xcframework', 'Frameworks/Microsoft/Secp256k1.xcframework', 'Frameworks/Microsoft/VCCrypto.xcframework', 'Frameworks/Microsoft/VCToken.xcframework'
   # s.source_files = "VCL/**/*"
   
   # s.documentation_url = 'https://github.com/velocitycareerlabs/poc-docs/blob/dev/VCL-Swift.md'
