@@ -20,7 +20,7 @@ DESC
   s.source           = { :git => 'https://github.com/velocitycareerlabs/VCL-Swift.git', :tag => s.version.to_s }
   
   s.platform                = :ios
-  s.ios.deployment_target   = '11.0'
+  s.ios.deployment_target   = '13.0'
   s.requires_arc            = true
   s.swift_version           = '5'
 
